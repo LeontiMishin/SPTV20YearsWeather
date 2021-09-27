@@ -45,6 +45,7 @@ public class SPTV20YearsWeather {
                 yearsWeather[i][j] = random.nextInt(max - min + 1) + min;
                 sum += yearsWeather[i][j];
                 System.out.printf("%4d",yearsWeather[i][j]);
+                
                 //дни
             
             }
@@ -65,10 +66,16 @@ public class SPTV20YearsWeather {
         System.out.print("Введите число: ");
         int chislo=scanner.nextInt();
         System.out.printf("%2d",yearsWeather[mesjac-1][chislo-1]);
-            
-            
-            
-        
+        int maxInt=0;
+        for(int i=0;i<nums;length;i++){
+            if(maxInt<nums[i]){
+            maxInt=nums[i];
+            }
+            if(minInt>nums[i]){
+            minInt=nums[i];
+            }
+//            двойной for + клетки + min,max
+    }  
     }
 }
 
