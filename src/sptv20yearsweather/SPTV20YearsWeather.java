@@ -15,7 +15,7 @@ public class SPTV20YearsWeather {
         int[][] yearsWeather = new int[12][];
         System.out.print("             ");
         for (int i = 0; i < 31; i++) {
-            System.out.printf("%4d",i+1,"rgijrt");
+            System.out.printf("%4d",i+1);
         }
         System.out.println();
         System.out.println("        ---------------------------------------"
@@ -40,10 +40,12 @@ public class SPTV20YearsWeather {
             yearsWeather[i]= new int[dayInMonth];
             double sum = 0.0;
             System.out.printf("%11s: ", Month.values()[i]);
+            //месяц
             for (int j = 0; j < yearsWeather[i].length; j++) {
                 yearsWeather[i][j] = random.nextInt(max - min + 1) + min;
                 sum += yearsWeather[i][j];
                 System.out.printf("%4d",yearsWeather[i][j]);
+                //дни
             
             }
             if(dayInMonth > 28 && dayInMonth < 31){
@@ -57,11 +59,12 @@ public class SPTV20YearsWeather {
             System.out.println();
         }
         
-//            Scanner scanner= new Scanner(System.in);
-//            System.out.print("Введите месяц: ");
-//            int mesjac=scanner.nextInt();
-//            System.out.print("Введите число: ");
-//            int chislo=scanner.nextInt();
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("Введите месяц: ");
+        int mesjac=scanner.nextInt();
+        System.out.print("Введите число: ");
+        int chislo=scanner.nextInt();
+        System.out.printf("%2d",yearsWeather[mesjac-1][chislo-1]);
             
             
             
